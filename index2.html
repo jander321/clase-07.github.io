@@ -6,34 +6,31 @@
     <title>Pregunta sobre película favorita</title>
 </head>
 <body>
+    <script>
+        var nombre= prompt("¿Cuál es su nombre?");
+        var pelicula= prompt("¿Qué película te gusta?");
 
-<script>
-    var dato=20;
-
-if(dato<=0)
-{
-    document.write("tu numero es menor igual a 0");
-}
-else if(dato<=5)
-{
-    document.write("tu numero es mayor a 0, pero menor o igual a 5");
-}
-else if(dato<=10)
-{
-    document.write("tu numero es mayor a 5, pero menor o igual a 10");
-}
-else if(dato<=15)
-{
-    document.write("tu numero es mayor a 10, pero menor o igual 15");
-}
-else if(dato<=20)
-{
-    document.write("tu numero es mayor a 15, pero menor o igual 20");
-}
-else{
-    document.write("tu numero es mayor 20");
-}
-</script>
-
+        if (pelicula.toLowerCase() === "shrek")
+        {
+        document.write('<img src="https://lh5.googleusercontent.com/proxy/60BqCTAJsU5mfX1v9smTmHrWehrNKwYJ2N951Aajrs0FyS4V7EoDFIzwrO26KG2Q_hc0quJP8ugHDb4f83_9R6b-YrIfG1_puxx_e6gldZP3WHb5yXsyv-q4IIQoIw0_S_kZebr8neLBCni4x-yAbRVUeJM9icoovxZKyQaBOApFigGVfBpcPCzvXD1-x7zQaIKkvZ8K7L0_Srwe0VOAE7ij8FjZ5Rt6IPDYtKT8s5YxdDW6l9SWP15G2P1iNauvT4gBVfk7PA=w1920-h911">');
+        } 
+        else if (pelicula.toLowerCase() === "interestelar")
+        {
+        document.write('<img src="https://media.pasionmovil.com/2024/12/Interestelar-aniversario-10-IMAX.webp">');
+        } 
+        else if (pelicula.toLowerCase() === "depredador 2")
+        {
+        document.write('<img src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/1990/11/w1280/92Lqy293CqAExYXlqDc456eYCWp.jpg">');
+        } 
+        else if (pelicula.toLowerCase() === "minecraft")
+        {
+        document.write('<img src="https://m.media-amazon.com/images/M/MV5BYzFjMzNjOTktNDBlNy00YWZhLWExYTctZDcxNDA4OWVhOTJjXkEyXkFqcGc@._V1_.jpg">');
+        } 
+       
+        else {
+  
+        document.write("Tu película favorita no es Shrek,interestelar,depredador,minecraft");
+        }
+    </script>
 </body>
 </html>
