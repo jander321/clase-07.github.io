@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pregunta sobre película favorita</title>
 </head>
 <body>
-    <script>
-        var dato=parseInt(prompt("brindaem tu numero"));
 
-        if(dato>100){
-            document.write("tu numero es mayor a 100");
-        } else{
-            document.write("tu numero es menor a 100");
-        }
-    </script>
+<script>
+    var dato=20;
+
+if(dato<=0)
+{
+    document.write("tu numero es menor igual a 0");
+}
+else if(dato<=5)
+{
+    document.write("tu numero es mayor a 0, pero menor o igual a 5");
+}
+else if(dato<=10)
+{
+    document.write("tu numero es mayor a 5, pero menor o igual a 10");
+}
+else if(dato<=15)
+{
+    document.write("tu numero es mayor a 10, pero menor o igual 15");
+}
+else if(dato<=20)
+{
+    document.write("tu numero es mayor a 15, pero menor o igual 20");
+}
+else{
+    document.write("tu numero es mayor 20");
+}
+</script>
+
 </body>
 </html>
